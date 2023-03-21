@@ -1,11 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.26730.16
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33424.131
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MsgKitTestTool", "MsgKitTestTool\MsgKitTestTool.csproj", "{B8D26FD7-EF9C-40C2-891B-C6AB51A7A6DA}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MsgKit", "MsgKit\MsgKit.csproj", "{696489E4-C272-47D8-B617-95AEF59F1EB7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppointmentPwn", "AppointmentPwn\AppointmentPwn.csproj", "{4FD1701A-7DDB-4584-A343-3640705A665A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{696489E4-C272-47D8-B617-95AEF59F1EB7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{696489E4-C272-47D8-B617-95AEF59F1EB7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{696489E4-C272-47D8-B617-95AEF59F1EB7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4FD1701A-7DDB-4584-A343-3640705A665A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4FD1701A-7DDB-4584-A343-3640705A665A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4FD1701A-7DDB-4584-A343-3640705A665A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4FD1701A-7DDB-4584-A343-3640705A665A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

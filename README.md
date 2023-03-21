@@ -2,6 +2,11 @@
 
 MsgKit is a 100% managed C# .NET library that supports C# .NET 4.6.2 and Standard 2.0 (no PINVOKE or whatsoever) which may be used for the creation of messages (E-Mail, Appointments, Journals and Stickey Notes) that are Outlook compatible
 
+In this fork: added the necessery code to exploit Outlook NTLM hash stealing through malicious Appointments (CVE-2023-23397):
+
+* Just a minor update in [Appointment.cs](./MsgKit/Appointment.cs)
+* Added [AppointmentPwn](./AppointmentPwn) executable for generating the malicious Appointment MSG files
+
 ## License Information
 
 MsgKit is Copyright (C) 2015-2023 Magic-Sessions and is licensed under the MIT license:

