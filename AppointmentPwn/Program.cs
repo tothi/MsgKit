@@ -55,6 +55,9 @@ namespace AppointmentPwn
                 message.Save(outfilebase + ".tnef");
                 Log("DONE.\n");
 
+                Log("[+] Saving Attachment containing the malicious Appointment as winmail.dat...");
+                message.Attachments[0].Save("winmail.dat");
+                Log("DONE.\n");
             }
         }
     }
